@@ -1,0 +1,47 @@
+.about {
+  @extend %container;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 74px 376px 74px 242px;
+}
+
+.about__image {
+  width: 701px;
+}
+
+.about__content {
+  width: 555px;
+  padding-top: 25px;
+}
+
+.about__title {
+  @extend %title;
+  margin-bottom: 72px;
+}
+
+.about__list {
+  margin: {
+    top: 0;
+    bottom: 0;
+  }
+}
+
+.about__list-title {
+  margin-bottom: 2px;
+  padding-left: 75px;
+  font: {
+    weight: $fontWeightBold;
+    size: $fontSizeTitleSmall;
+  }
+  line-height: $lineHeightText;
+  color: $colorTextDark;
+  background: url("../img/about_icon-check.svg") 25px 3px / 31px no-repeat;
+}
+
+.about__list-text {
+  margin: {
+    bottom: 37px;
+    left: 75px;
+  }
+}
