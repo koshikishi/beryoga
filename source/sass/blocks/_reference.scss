@@ -1,0 +1,49 @@
+.reference {
+  @extend %container;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 74px 267px 74px 312px;
+}
+
+.reference__content {
+  width: 560px;
+  padding-top: 116px;
+}
+
+.reference__heading {
+  margin-bottom: 54px;
+}
+
+.reference__author {
+  margin: {
+    top: 0;
+    bottom: -1px;
+  }
+  font: {
+    style: oblique;
+    weight: $fontWeightNormal;
+    size: $fontSizeTextLarge;
+  }
+  color: $colorTextLight;
+}
+
+.reference__title {
+  @extend %title;
+}
+
+.reference__inner {
+  width: 390px;
+  padding-left: 56px;
+}
+
+.reference__text {
+  margin: {
+    top: 0;
+    bottom: 55px;
+  }
+}
+
+.reference__image {
+  width: 661px;
+}

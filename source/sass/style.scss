@@ -4,8 +4,9 @@
 @import "misc/mixins";
 @import "misc/fonts";
 @import "misc/extends", "blocks/visually-hidden";
-@import "misc/base", "blocks/page", "blocks/button";
+@import "misc/base", "blocks/page", "blocks/button", "blocks/read-more";
 @import "blocks/header", "blocks/main-nav";
 @import "blocks/offer";
 @import "blocks/features";
 @import "blocks/about";
+@import "blocks/reference";
