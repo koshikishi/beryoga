@@ -1,0 +1,6 @@
+@include font-face("Fivo Sans", "Light", $fontWeightLight);
+@include font-face("Fivo Sans", "Regular");
+@include font-face("Fivo Sans", "Regular", $style: oblique);
+@include font-face("Fivo Sans", "Medium", $fontWeightMedium);
+@include font-face("Fivo Sans", "Bold", $fontWeightBold);
+@include font-face("Fivo Sans Modern", "Heavy", $fontWeightHeavy);
