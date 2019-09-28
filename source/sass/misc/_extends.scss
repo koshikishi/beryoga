@@ -17,6 +17,10 @@
 }
 
 %title {
+  margin: {
+    top: 0;
+    bottom: 0;
+  }
   font: {
     weight: $fontWeightBold;
     size: $fontSizeTitle;

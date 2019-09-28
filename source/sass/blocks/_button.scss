@@ -21,6 +21,21 @@
     box-shadow: -5px 6px 48.6px 5.4px $colorShadowButtonSmall;
   }
 
+  &--large {
+    width: 240px;
+    padding: 18px;
+    font-size: $fontSizeTextLarge;
+    border-radius: 40px;
+    box-shadow:
+      0 0 7px $colorShadowButtonUpper,
+      -14px 17px 23.52px 0.48px $colorShadowButtonLarge;
+
+    &:hover,
+    &:focus {
+      filter: drop-shadow(-14px 17px 11px $colorShadowButtonLargeHover);
+    }
+  }
+
   &:hover,
   &:focus {
     color: $colorTextButtonHover;
