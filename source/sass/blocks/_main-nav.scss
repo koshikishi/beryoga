@@ -1,0 +1,40 @@
+.main-nav {
+  @extend %list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  width: 974px;
+}
+
+.main-nav__item {
+  margin: {
+    right: 33px;
+    left: 33px;
+  }
+}
+
+.main-nav__link {
+  font-weight: $fontWeightNormal;
+  line-height: $lineHeightTextSmall;
+  color: $colorTextNav;
+  letter-spacing: $letterSpacingNav;
+
+  &:hover,
+  &:focus,
+  &--active {
+    position: relative;
+    color: transparent;
+    outline: none;
+
+    &::after {
+      content: attr(data-text);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      font-weight: $fontWeightBold;
+      color: $colorPrimary;
+      white-space: nowrap;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.button {
+  display: inline-block;
+  box-sizing: border-box;
+  font-weight: $fontWeightNormal;
+  vertical-align: middle;
+  text-align: center;
+  color: $colorWhiteDark;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  background-color: $colorPrimary;
+  border: 2px solid transparent;
+  cursor: pointer;
+
+  &--small {
+    width: 140px;
+    padding: 1px 15px;
+    line-height: $lineHeightTextSmall;
+    color: $colorWhite;
+    letter-spacing: $letterSpacingNav;
+    border-radius: 21px;
+    box-shadow: -5px 6px 48.6px 5.4px $colorShadowButtonSmall;
+  }
+
+  &:hover,
+  &:focus {
+    color: $colorTextButtonHover;
+    background-color: transparent;
+    border-color: $colorPrimary;
+    outline: none;
+    box-shadow: none;
+  }
+}

@@ -1,0 +1,26 @@
+.header {
+  @extend %container;
+  padding: 82px 246px 82px 256px;
+}
+
+.header__nav {
+  display: flex;
+  align-items: flex-start;
+}
+
+.header__logo {
+  width: 126px;
+  margin-top: 3px;
+
+  img {
+    display: block;
+  }
+}
+
+.header__main-nav {
+  margin: {
+    top: 1px;
+    right: auto;
+    left: auto
+  }
+}
