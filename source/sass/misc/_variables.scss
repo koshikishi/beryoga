@@ -1,5 +1,62 @@
+$colorWhite: #ffffff;
+$colorWhiteDark: #fbfcfc;
+$colorBlack: #000000;
+
+$colorPrimary: #ff6a6d;
+
+$colorText: rgba($colorBlack, 0.65);
+$colorTextLight: rgba($colorBlack, 0.51);
+$colorTextDark: rgba($colorBlack, 0.75);
+$colorTitle: #3b3838;
+$colorTitleLight: rgba($colorTitle, 0.75);
+
+$colorTextNav: rgba(#1c2056, 0.5);
+$colorTextMore: #3cbef1;
+$colorTextFooter: rgba(#2e2e2e, 0.7);
+$colorTextButtonHover: #f82a56;
+$colorTitlePrice: rgba(#494949, 0.8);
+
+$colorButtonGradientDark: #5fcef5;
+$colorButtonGradientLight: #83e4fc;
+$colorButtonGradientDarkHover: #21acdd;
+$colorButtonGradientLightHover: #9ddae9;
+
+$colorShadowButtonUpper: rgba($colorWhite, 0.35);
+$colorShadowButtonSmall: rgba(#ff0005, 0.19);
+$colorShadowButtonMedium: rgba(#5fcef4, 0.29);
+$colorShadowButtonMediumBS: rgba(#e2585b, 0.29);
+$colorShadowButtonLarge: rgba(#e2585b, 0.45);
+$colorShadowButtonLargeHover: rgba(#e35e6c, 0.45);
+$colorShadowPrice: rgba($colorPrimary, 0.15);
+$colorShadowPriceBS: rgba($colorPrimary, 0.19);
+
 $fontWeightLight: 300;
 $fontWeightNormal: 400;
 $fontWeightMedium: 500;
 $fontWeightBold: 700;
 $fontWeightHeavy: 800;
+
+$fontSizeText: 18px;
+$fontSizeTextLarge: 20px;
+$fontSizeTitleSmall: 24px;
+$fontSizeTitle: 50px;
+
+$fontSizePriceTitle: 30px;
+$fontSizePriceSup: 48px;
+$fontSizePrice: 150px;
+$fontSizeFooter: 16px;
+
+$lineHeightTextTiny: 27px;
+$lineHeightTextSmall: 36px;
+$lineHeightText: 40px;
+$lineHeightTitle: 60.39px;
+$lineHeightTitleLarge: 67.39px;
+
+$lineHeightPrice: 29.13px;
+$lineHeightFooter: 30px;
+
+$fontFamilyText: "Fivo Sans", "Arial", sans-serif;
+$fontFamilyTextAlt: "Fivo Sans Modern", "Arial", sans-serif;
+
+$letterSpacingNav: 0.05em;
+$letterSpacingFooter: 0.1em;

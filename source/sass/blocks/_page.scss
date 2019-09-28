@@ -1,0 +1,15 @@
+.page {
+  min-width: 1920px;
+  margin: 0;
+  font: $fontWeightLight #{$fontSizeText}/#{$lineHeightText} $fontFamilyText;
+  color: $colorText;
+  background:
+    url("../img/bg_01.png") -298px -466px no-repeat,
+    url("../img/bg_02.png") bottom -946px left -321px no-repeat $colorWhiteDark;
+
+  @media (min-width: 1920px) {
+    background-position:
+      center -466px,
+      center bottom -946px;
+  }
+}
