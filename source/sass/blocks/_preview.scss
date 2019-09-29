@@ -1,0 +1,39 @@
+.preview {
+  @extend %container;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 74px 355px 74px 178px;
+}
+
+.preview__image {
+  width: 629px;
+  margin-top: 41px;
+}
+
+.preview__content {
+  width: 685px;
+}
+
+.preview__title {
+  @extend %title;
+  margin-bottom: 85px;
+  line-height: $lineHeightTitleLarge;
+}
+
+.preview__inner {
+  width: 555px;
+  padding-left: 115px;
+}
+
+.preview__text {
+  margin: {
+    top: 0;
+    bottom: 0;
+  }
+  text-indent: $textIndent;
+
+  &:last-of-type {
+    margin-bottom: 75px;
+  }
+}

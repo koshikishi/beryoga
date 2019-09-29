@@ -3,8 +3,223 @@
   <head>
     <meta charset="utf-8">
     <title>BerYoga — Yoga School Landing Page</title>
+    <link rel="preload" href="fonts/fivosans-light.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/fivosans-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/fivosans-bold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="css/style.min.css">
   </head>
-  <body>
+  <body class="page">
+    <header class="header">
+      <nav class="header__nav">
+        <a class="header__logo">
+          <img src="img/logo.png" alt="BerYoga Logo" width="126" height="30">
+        </a>
+        <ul class="main-nav header__main-nav">
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--active" data-text="Home">Home</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#!" data-text="About Us">About Us</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#!" data-text="Contact">Contact</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#!" data-text="Pricing">Pricing</a>
+          </li>
+        </ul>
+        <a class="button button--small" href="#!">Login</a>
+      </nav>
+    </header>
+    <main>
+      <h1 class="visually-hidden">Yoga School BerYoga</h1>
+      <section class="offer page__offer">
+        <h2 class="offer__title">Beautiful videos. Become your best self with BerYoGa.</h2>
+        <p class="offer__text">
+          For me, BerYoga is more than just a sport – it is lifestyle, a state mind, a philosophy.<br>
+          Now I decided to open BerYoga so that I can share my love and joy of bikram yoga. It is my hope that you too can discover all the positive impacts of bikram yoga and make bikram yoga as a part of your life.
+        </p>
+        <div class="offer__buttons">
+          <a class="button button--large" href="#!">Service</a>
+          <a class="button button--large" href="#!">Sign Up</a>
+        </div>
+      </section>
+      <section class="features page__features">
+        <div class="features__heading">
+          <h2 class="features__title">Why Choose BerYoga?</h2>
+          <p class="features__text">Access hundreds of online yoga classes shot in natural studios around the world. Unlimited access for $150/Years.</p>
+        </div>
+        <ul class="features__list">
+          <li class="features__item features__item--updates">
+            <h3 class="features__item-title">Lifetime Updates</h3>
+            <p class="features__item-text">Free lifetime updates for our lates collection.</p>
+          </li>
+          <li class="features__item features__item--videos">
+            <h3 class="features__item-title">Anywhere Videos</h3>
+            <p class="features__item-text">Access world-class online yoga videos can be seen on the application & web</p>
+          </li>
+          <li class="features__item features__item--access">
+            <h3 class="features__item-title">Access Unlimited</h3>
+            <p class="features__item-text">Find lots of yoga video tutorials, from all over the world</p>
+          </li>
+        </ul>
+      </section>
+      <section class="about page__about">
+        <img class="about__image" src="img/about_01.svg" alt="About BerYoga" width="701" height="655">
+        <div class="about__content">
+          <h2 class="about__title">What’s on BerYoga?</h2>
+          <dl class="about__list">
+            <dt class="about__list-title">New Classes Every Week</dt>
+            <dd class="about__list-text">Discover hundreds of classes in our library. Save your favorites, try new styles and customize your routine to fit your schedule.</dd>
+            <dt class="about__list-title">Series</dt>
+            <dd class="about__list-text">Our multi-class series are designed to help you achieve your fitness and wellness goals.</dd>
+            <dt class="about__list-title">Pose Directory</dt>
+            <dd class="about__list-text">Get step-by-step instructions on poses and sequences in our extensive video pose directory.</dd>
+          </dl>
+        </div>
+      </section>
+      <section class="reference page__reference">
+        <div class="reference__content">
+          <div class="reference__heading">
+            <p class="reference__author">By Brittany Risherjan _____</p>
+            <h2 class="reference__title">The Healing Power of Trauma-Informed Yoga Classes.</h2>
+          </div>
+          <div class="reference__inner">
+            <p class="reference__text">Celebrating five years of service, the nonprofit Exhale to Inhale brings free, trauma-informed yoga classes to rape crisis centers and domestic violence shelters in Jakarta.</p>
+            <a class="read-more" href="#!">Read More &gt;</a>
+          </div>
+        </div>
+        <img class="reference__image" src="img/reference_01.svg" alt="Trauma-Informed Yoga Classes" width="661" height="640">
+      </section>
+      <section class="preview page__preview">
+        <img class="preview__image" src="img/preview_01.svg" alt="5 Ways to Make Yoga More Restorative and Therapeutic" width="629" height="735">
+        <div class="preview__content">
+          <h2 class="preview__title">5 Ways to Make Every Yoga Class More Restorative and Therapeutic</h2>
+          <div class="preview__inner">
+            <p class="preview__text">In part four of our series on teaching trauma-sensitive yoga, teacher Daniel Sernicola shares five practices to help your students get grounded and cultivate mindfulness.</p>
+            <p class="preview__text">Teachers, need liability insurance? As a TeachersPlus member, you can access low-cost coverage and more than a dozen valuable benefits that will build your skills and business. Enjoy a free subscription to YJ, a free profile on our national directory, exclusive webinars and content packed with advice, discounts on educational resources and gear, and more</p>
+            <a class="read-more" href="#!">Read More &gt;</a>
+          </div>
+        </div>
+      </section>
+      <section class="price page__price">
+        <h2 class="visually-hidden">BerYoga Prices</h2>
+        <div class="price__inner">
+          <div class="price__card">
+            <ul class="price__list">
+              <li class="price__item">Unlimitied Access Video</li>
+              <li class="price__item">Saved Videos</li>
+              <li class="price__item">Ofline Access</li>
+            </ul>
+            <p class="price__value">
+              <span class="price__currency">$</span>15<span class="price__term">/Mo</span>
+            </p>
+            <p class="price__text">Billed monthly</p>
+            <a class="button button--medium" href="#!">Become A Member</a>
+          </div>
+          <div class="price__card price__card--best">
+            <h3 class="price__card-title">Best Seller</h3>
+            <ul class="price__list">
+              <li class="price__item">Unlimitied Access Video</li>
+              <li class="price__item">Saved Videos</li>
+              <li class="price__item">Ofline Access</li>
+            </ul>
+            <p class="price__value">
+              <span class="price__currency">$</span>150<span class="price__term">/Year</span>
+            </p>
+            <p class="price__text">Biled a one year - Save 45%</p>
+            <a class="button button--medium" href="#!">Become A Member</a>
+          </div>
+          <div class="price__card">
+            <h3 class="price__card-title">Yoga Class</h3>
+            <ul class="price__list">
+              <li class="price__item">Only Yoga Class</li>
+              <li class="price__item">Unlimitied Access Video</li>
+            </ul>
+            <p class="price__value">
+              <span class="price__currency">$</span>5<span class="price__term">/Mo</span>
+            </p>
+            <p class="price__text">Billed monthly</p>
+            <a class="button button--medium" href="#!">Become A Member</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__columns">
+          <div class="footer__column">
+            <h3 class="footer__title">Contact Us</h3>
+            <address class="footer__contacts">
+              <p>
+                Beryoga, Jl. Sudirman<br>
+                no. 129, Tebet<br>
+                Jakarta Selatan
+              </p>
+              <p>
+                <a href="mailto:beryoga@yuk.com">beryoga@yuk.com</a><br>
+                <a href="tel:+081268242856">0812 6824 2856</a> (Main)<br>
+                <a href="tel:+0722673842">(072) 2673842</a> (Toll-free)
+              </p>
+            </address>
+          </div>
+          <div class="footer__column">
+            <h3 class="footer__title">About Us</h3>
+            <ul class="footer__column-list">
+              <li>
+                <a class="footer__column-link" href="#!">Our Mission</a>
+              </li>
+              <li>
+                <a class="footer__column-link" href="#!">Our Team</a>
+              </li>
+              <li>
+                <a class="footer__column-link" href="#!">Management</a>
+              </li>
+              <li>
+                <a class="footer__column-link" href="#!">Policies</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h3 class="footer__title">Our Programs</h3>
+            <ul class="footer__column-list footer__column-list--compact">
+              <li>
+                <a class="footer__column-link" href="#!">Yoga Class</a>
+              </li>
+              <li>
+                <a class="footer__column-link" href="#!">Bikram Yoga</a>
+              </li>
+              <li>
+                <a class="footer__column-link" href="#!">Acro Yoga</a>
+              </li>
+              <li>
+                <a class="footer__column-link" href="#!">Sveda Yoga</a>
+              </li>
+              <li>
+                <a class="footer__column-link" href="#!">Yo Mama</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h3 class="footer__title">Support Trails</h3>
+            <ul class="footer__column-list footer__column-list--compact">
+              <li>
+                <a class="footer__column-link" href="#!">Donate</a>
+              </li>
+              <li>
+                <a class="footer__column-link" href="#!">Individual Membership</a>
+              </li>
+              <li>
+                <a class="footer__column-link" href="#!">Gift membership</a>
+              </li>
+              <li>
+                <a class="footer__column-link" href="#!">Hiker Store</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="footer__copyright">Copyright © 2019 BerYoga All rights reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>

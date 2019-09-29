@@ -1,0 +1,117 @@
+.price {
+  @extend %container;
+  padding: 74px 240px 74px 241px;
+}
+
+.price__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  width: 473px;
+  min-height: 689px;
+  padding: {
+    top: 24px;
+    bottom: 55px;
+  }
+  font-weight: $fontWeightNormal;
+  line-height: $lineHeightPrice;
+  color: $colorTitleLight;
+  background-color: $colorWhite;
+  border-radius: 20px;
+  box-shadow: -27px 32px 35px $colorShadowPrice;
+
+  &--best {
+    position: relative;
+    width: 502px;
+    min-height: 772px;
+    margin: {
+      right: -5px;
+      left: -5px;
+    }
+    padding-top: 0;
+    box-shadow: -24px 28px 136px $colorShadowPriceBS;
+  }
+}
+
+.price__card-title {
+  align-self: stretch;
+  margin: {
+    top: 0;
+    bottom: 0;
+  }
+  padding: 53px 70px 7px;
+  font: {
+    weight: $fontWeightBold;
+    size: $fontSizePriceTitle;
+  }
+  text-align: center;
+  color: $colorTitlePrice;
+
+  .price__card--best & {
+    padding: {
+      top: 44px;
+      bottom: 34px;
+    }
+    color: $colorWhiteDark;
+    text-transform: uppercase;
+    background-color: $colorPrimary;
+    border-radius: 20px 20px 0 0;
+  }
+}
+
+.price__list {
+  @extend %list-reset;
+  width: 359px;
+  margin-bottom: auto;
+  padding: 50px 57px 25px;
+}
+
+.price__item {
+  padding: {
+    top: 7px;
+    bottom: 2px;
+    left: 72px;
+  }
+  background: url("../img/price_icon-check-01.svg") left / 38px no-repeat;
+
+  &:not(:last-child) {
+    margin-bottom: 27px;
+  }
+
+  .price__card--best & {
+    background-image: url("../img/price_icon-check-02.svg");
+  }
+}
+
+.price__value {
+  margin: {
+    top: 0;
+    bottom: 34px;
+  }
+  font-size: $fontSizePrice;
+}
+
+.price__currency {
+  margin-right: 13px;
+  font-size: $fontSizePriceSup;
+  vertical-align: text-top;
+}
+
+.price__term {
+  font-size: $fontSizePriceTitle;
+}
+
+.price__text {
+  margin: {
+    top: 0;
+    bottom: 54px;
+  }
+  font-style: oblique;
+}

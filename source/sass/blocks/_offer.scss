@@ -1,0 +1,25 @@
+.offer {
+  @extend %container;
+  padding: 74px 370px;
+}
+
+.offer__title {
+  @extend %title;
+  width: 560px;
+  margin-bottom: 37px;
+}
+
+.offer__text {
+  width: 475px;
+  margin: {
+    top: 0;
+    bottom: 60px;
+  }
+}
+
+.offer__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 507px;
+}
