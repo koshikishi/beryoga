@@ -7,9 +7,20 @@
   color: $colorWhiteDark;
   word-wrap: break-word;
   overflow-wrap: break-word;
-  background-color: $colorPrimary;
+  background: {
+    color: $colorPrimary;
+    origin: border-box;
+  }
   border: 2px solid transparent;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $colorTextButtonHover;
+    background-color: transparent;
+    border-color: $colorPrimary;
+    outline: none;
+  }
 
   &--small {
     width: 140px;
@@ -19,6 +30,45 @@
     letter-spacing: $letterSpacingNav;
     border-radius: 21px;
     box-shadow: -5px 6px 48.6px 5.4px $colorShadowButtonSmall;
+
+    &:hover,
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  &--medium {
+    width: 225px;
+    padding: 23px 20px 19px;
+    font-weight: $fontWeightMedium;
+    line-height: $lineHeightPrice;
+    background-image: linear-gradient(66deg, $colorButtonGradientDark, $colorButtonGradientLight);
+    border-radius: 38px;
+    box-shadow:
+      0 0 7px $colorShadowButtonUpper,
+      -13px 16px 23.52px 0.48px $colorShadowButtonMedium;
+
+    .price__card--best & {
+      background-image: none;
+      box-shadow:
+        0 0 7px $colorShadowButtonUpper,
+        -13px 16px 23.52px 0.48px $colorShadowButtonMediumBS;
+
+      &:hover,
+      &:focus {
+        color: $colorTextButtonHover;
+        background-image: none;
+        border-color: $colorPrimary;
+        box-shadow: none;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      color: $colorWhiteDark;
+      background-image: linear-gradient(66deg, $colorButtonGradientDarkHover, $colorButtonGradientLightHover);
+      border-color: transparent;
+    }
   }
 
   &--large {
@@ -32,16 +82,8 @@
 
     &:hover,
     &:focus {
+      box-shadow: none;
       filter: drop-shadow(-14px 17px 11px $colorShadowButtonLargeHover);
     }
-  }
-
-  &:hover,
-  &:focus {
-    color: $colorTextButtonHover;
-    background-color: transparent;
-    border-color: $colorPrimary;
-    outline: none;
-    box-shadow: none;
   }
 }
